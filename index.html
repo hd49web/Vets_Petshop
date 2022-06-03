@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vet's Veterinaria</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <script src='main.js'></script>
+    
+</head>
+<body>
+<section>
+<div class="circle" ></div>
+<header>
+<a href="#"><img src="imagens/logo.png" class="logo"></a>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">QUEM SOMOS</a></li>
+<li><a href="#">CONTATO</a></li>
+</ul>
+</header>
+
+<div class="content">
+<div class="textoPet">
+<h2>Seu Pet fica mais seguro  <span>Vet'S</span>  VETERINARIA</h2>
+<p>Seu pet fica com os cuidados da nosso equipe , onde tomamos todo cuidado.
+A segunda casa do seu amigo pet 🐶 🐱
+<br> Aberto de segunda a sábado das 09:00 às 18:00.</p>
+<a href="#">Saber Mais</a>
+</div>
+
+<div class="imgPet">
+    <img src="imagens/cao1.png" class="vets">
+
+</div>
+</div>
+<ul class="fotoPet">
+    <li><img src="imagens/cao1.png" onclick="imgSlider('imagens/cao1.png');changeCircleColor('#017143')"></li>
+    <li><img src="imagens/gato.png" onclick="imgSlider('imagens/gato.png');changeCircleColor('#eb7495')"></li>
+    <li><img src="imagens/cao4.png" onclick="imgSlider('imagens/cao4.png');changeCircleColor('#d752b1')"></li>
+ </ul>
+<ul class="ico">
+<li> <a href="#"><img src="imagens/facebook.png"></a></li>
+<li> <a href="https://www.instagram.com/vets_veterinaria/?hl=en"><img src="imagens/instagram.png"></a></li>
+<li> <a href="https://api.whatsapp.com/send/?phone=5511955515579&text&app_absent=0"><img src="imagens/7.png"></a></li>
+</ul>
+</section>    
+<script  type="text/javascript">
+   
+ function imgSlider(anything){
+    document.querySelector(".vets").src = anything
+}
+
+function changeCircleColor(color){
+    const circle = document.querySetector('.circle');
+    circle.style.background = color;
+}
+
+</script>
+
+
+
+
+</body>
+</html>
