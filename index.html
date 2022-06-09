@@ -6,61 +6,141 @@
     <title>Vet's Veterinaria</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
-    <script src='main.js'></script>
+    <script src=''></script>
     
 </head>
 <body>
-<section>
-<div class="circle" ></div>
-<header>
-<a href=""><img src="imagens/logo.png" class="logo"></a>
-<ul>
-<li><a href="#">HOME</a></li>
-<li><a href="#">QUEM SOMOS</a></li>
-<li><a href="#">CONTATO</a></li>
-</ul>
-</header>
+<div class="container">
+	<!--div class="circle"></div-->
+<div class="navbar">
+<div class="quadro">
 
-<div class="content">
-<div class="textoPet">
-<h2>Seu Pet fica mais seguro  <span>Vet'S</span>  VETERINARIA</h2>
+	 <img src="gif/andando.gif" class="andando">
+        <img src="gif/deolho.gif" class="deolho" >
+
+</div>
+<a href=""><img src="imagens/logo2.jpg" class="logo"></a>
+
+<nav>
+<ul id="menu-lista">    
+<li class="nav-li"><a href="#" >HOME</a></li>
+<li class="nav-li"><a href="#" >QUEM SOMOS</a></li>
+<li class="nav-li"><a href="#" >CONTATO</a></li>
+</ul>
+</nav>
+<img class="menu-icon" src="imagens/pata-de-animal.png" alt="menu" onclick="showMenu()">
+</div>  
+
+
+<div class="row">
+	
+<div class="coluna1">
+
+<h2> Seu Pet fica mais seguro <br>  <span>Vet'S</span>   VETERINARIA</h2>
+
 <p>Seu pet fica com os cuidados da nosso equipe , onde tomamos todo cuidado.
 A segunda casa do seu amigo pet 🐶 🐱
 <br> Aberto de segunda a sábado das 09:00 às 18:00.</p>
+
 <a href="#">Saber Mais</a>
-<a href="https://api.whatsapp.com/send/?phone=5511955515579&text&app_absent=0">Whatsapp</a>
-</div>
-
-<div class="imgPet">
-    <img src="imagens/cao1.png" class="vets">
+<!--a href="https://api.whatsapp.com/send/?phone=5511955515579&text&app_absent=0">Whatsapp</a-->
 
 </div>
+
+<div class="coluna2">
+
+<div class="circle">
+
+	
+
 </div>
-<ul class="fotoPet">
-    <li><img src="imagens/cao1.png" onclick="imgSlider('imagens/cao1.png');changeCircleColor('#017143')"></li>
-    <li><img src="imagens/gato.png" onclick="imgSlider('imagens/gato.png');changeCircleColor('#eb7495')"></li>
-    <li><img src="imagens/cao4.png" onclick="imgSlider('imagens/cao4.png');changeCircleColor('#d752b1')"></li>
- </ul>
-<ul class="ico">
-<li> <a href="#"><img src="imagens/facebook.png"></a></li>
-<li> <a href="https://www.instagram.com/vets_veterinaria/?hl=en"><img src="imagens/instagram.png"></a></li>
-</ul>
-</section>    
-<script  type="text/javascript">
-   
- function imgSlider(anything){
-    document.querySelector(".vets").src = anything
-}
+<img class="vets"src="imagens/cao1.png" >
+</div>
+</div>
 
-function changeCircleColor(color){
-    const circle = document.querySetector('.circle');
-    circle.style.background = color;
-}
 
-</script>
+
+<div class="ico">
+<a href="#"><img src="imagens/facebook2.png"></a>
+<a href="https://www.instagram.com/vets_veterinaria/?hl=en"><img src="imagens/instagram1.png"></a>
+<a href="https://api.whatsapp.com/send/?phone=5511955515579&text&app_absent=0"><img src="imagens/whatsapp.png"></a>
+</div>
+
+</div>
 
 
 
 
 </body>
+
+
+
+<script type="text/javascript">
+	
+
+const menuLista = document.getElementById('menu-lista')
+menuLista.style.maxHeight = "0px"
+
+function showMenu(){
+ if(menuLista.style.maxHeight == "0px"){
+ 	menuLista.style.maxHeight = "120px"
+ }else{
+ 	menuLista.style.maxHeight = "0px"
+ }
+}
+
+const andando = document.querySelector('.andando');
+const deolho = document.querySelector('.deolho');
+
+const loop = setInterval(() => {
+const andandoPosition = andando.offsetLeft;
+const deolhoPosition = deolho.offsetLeft;
+if(andandoPosition == 400 ){
+    
+clearInterval(loop);
+
+    andando.src ="gif/caobravo.gif";
+    andando.style.width='150px'
+    andando.style.left = '400px'
+    andando.style.animation='none';
+    
+    deolho.src='gif/gatoolho.gif';
+    deolho.style.width='100px'
+    deolho.style.left = '10px'
+    deolho.style.animation="none";
+}
+}, 10) ;
+
+setTimeout(function(){
+    if(andando <="caobravo.gif"){
+    andando.src= 'gif/correndo.gif';
+    andando.style.width='180px';
+    deolho.src ='gif/assustado.gif';
+    deolho.style.width ='150px';
+    }
+},18000);
+
+setTimeout(function(){
+    if(andando <="correndo.gif"){
+    andando.src= 'gif/correndo.gif';
+    deolho.src ='gif/gatobravo.gif';
+    
+    }
+},20000);
+setTimeout(function(){
+    if(andando <="correndo.gif"){
+    andando.src= 'gif/late.gif';
+    andando.style.width='150px';
+    deolho.src ='imagens/logo2.jpg';
+    deolho.style.width='250px';
+   
+
+    }
+},22000);
+
+
+
+
+
+</script>
 </html>
