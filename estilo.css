@@ -16,15 +16,23 @@ body{
 display: flex;
 justify-content: center;
 align-items: center;
+background: rgb(226,235,219);
+
+
+
+
 /*
-background-color: orange;
+background: linear-gradient(0deg, rgba(226,235,219,1) 4%, rgba(8,168,48,1) 65%);
+
+background: linear-gradient(356deg, rgba(226,235,219,1) 4%, rgba(8,168,48,1) 59%); 
 */
 }
 .container{
+	box-shadow: 0 0 1rem 0  rgba(0,0,0, 0.4) ;
 width: 85%;
-/*
-border: 2px solid black;
-*/
+margin-top: 20px;
+border-radius: 50px;
+background-color: white;
 border-left: 18px solid #017143;
 display: flex;
 flex-direction: column;
@@ -35,14 +43,18 @@ flex-direction: column;
 	align-items: center;
 }
 .logo{
-display: none;	
-width: 150px;
-margin: 30px 0;
+display:none;	
+width: 100%;
+margin: 340px 20px;
+
+border-radius: 50%;
+
+
 }
 
 nav{
 	width: 100%;
-	text-align:right ;
+	text-align:center ;
 	font-family: arial, sans-serif;
 }
 li{
@@ -54,11 +66,27 @@ font-size: 20px;
 }
 
 nav li a{
+/*
+display: inline-block;
 
 color: black;
 text-decoration: none;
 font-weight: 500;
 color: #017143;
+
+*/
+     margin-top: 20px;
+     padding: 5px 9px;
+     background: #017143;
+     color: #fff;
+     border-radius: 80px;
+     font-weight: 500;
+     letter-spacing: 2px;
+     text-decoration: none;
+     text-align: center;
+     box-shadow: 0 0 1rem 0  rgba(0,0,0, 0.4) ;
+
+
 }
 
 .row{
@@ -93,6 +121,7 @@ margin: none;
      letter-spacing: 1px;
      text-decoration: none;
      text-align: center;
+     box-shadow: 0 0 1rem 0  rgba(0,0,0, 0.2) ;
 }
 
 .coluna2{
@@ -101,11 +130,10 @@ margin: none;
 }
 .vets{
 	width: 100%;
-	
 	z-index: 2;
-	
 	border-radius: 50%;
-	border: 15px  solid #017143;
+	border: 15px solid #017143;
+	box-shadow: 0 0 1rem 0  rgba(0,0,0, 0.2) ;
 }
 .ico{
 display: flex;
@@ -116,12 +144,14 @@ align-items: center;
 padding: 0 10px;
 width: 70px;
 
+
 }
 .menu-icon{
 	width: 35px;
 	margin-right: 35px;
 	display: none;
 }
+
 
 .quadro{
     width: 100%;
@@ -189,16 +219,21 @@ flex-direction: column;
 }	
 #menu-lista{
 position: relative;
-top: 80px;
-left:80px;
+
+top: 10px;
+left:10px;
 overflow: hidden;
+
 }
 .menu-icon{
 	display:block;
 }
 .nav-li{
 	display: block;
-	margin-top: 3px;
+	margin-top: 10px ;
+	font-size:15px;
+
+
 }
 
 

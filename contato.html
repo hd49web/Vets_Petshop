@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vet's Veterinaria</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <link rel= "shortcut icon" type="imagens/x-icon" href="favicon.png">
+    <script src=''></script>
+    
+<style type="text/css">
+    
+*{
+margin: 0;
+padding: 0;
+}
+.logo1{
+width: 30%;
+/*
+display:flex;
+*/
+border-radius: 50%;
+padding: 10px;
+}
+.contato{
+background: #017143;
+color: white;
+text-align: center;
+}
+.row{
+width: 95%;
+}
+.end{
+/*
+width: 100%;
+z-index: 2;
+display: flex;
+justify-content: center;
+border: 2px solid black;
+*/
+font-weight: 400;
+font-size: 24px;
+color: #017143;
+text-align: center;
+}
+
+.coluna1{
+/*
+display: flex;
+justify-content: center;
+height: 450px;
+margin-right: 50px;
+
+*/
+width: 50%;
+
+
+}
+.coluna2{
+  /*  
+display:flex;
+justify-content: center;
+*/
+border: 4px solid #017143;
+width: 50%;
+}
+
+.amor{
+width: 250px;
+border-bottom:4px solid #017143;
+/*
+position: absolute;
+margin-top:170px ;
+z-index: 1;
+
+*/
+}
+.mapa{
+width: 100%;
+/*
+border: 2px solid black;
+*/
+
+}
+
+@media (max-width: 760px){
+.coluna1{
+width:100%;
+}
+.coluna2{
+width: 100%;
+}
+}
+*/
+</style>
+</head>
+
+
+
+<body>
+<div class="container">
+<div class="navbar">
+<img src="imagens/logo4.jpg" class="logo1">
+<div class="quadro">
+</div>
+ 
+<nav>
+<ul id="menu-lista">
+<li class="nav-li"><a href="index.html" >HOME</a></li>
+<li class="nav-li"><a href="dicas.html" >DICAS</a></li>
+<!--li class="nav-li"><a href="contato.html" >CONTATO</a></li-->
+</ul>
+</nav>
+<img class="menu-icon" src="imagens/pata-de-animal.png" alt="menu" onclick="showMenu()">
+</div>  
+ 
+<div class="contato">
+<h1>CONTATO</h1>
+<p> Aberto de segunda a sábado das 09:00 às 18:00.</p>
+</div>
+
+<div class="row">
+
+<div class="coluna1">
+<div class="end">
+<h4>Av. Edu Chaves,1025</h4>
+<h4>Bairro : Parque Edu Chaves</h4>
+<h4>São Paulo - SP</h4>
+<h4>CEP: 02229-001</h4>
+<h4>TEL: 011-22249-2100</h4>
+
+<img class='amor    'src="gif/amor.gif">
+</div>
+</div>
+
+<div class="coluna2">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.5814082773345!2d-46.572455785023806!3d-23.47555898472547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef593c914ffff%3A0xb2d07469360b68d9!2sCl%C3%ADnica%20Veterin%C3%A1ria%20Edu%20Chaves!5e0!3m2!1sen!2sbr!4v1654949877946!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+</div>
+
+<div class="ico">
+
+
+<a href="https://api.whatsapp.com/send/?phone=5511955515579&text&app_absent=0"><img src="imagens/whatsapp.png"></a>
+<a href="https://www.instagram.com/vets_veterinaria/?hl=en"><img src="imagens/instagram1.png"></a>  
+<a href="#"><img src="imagens/facebook2.png"></a>
+
+
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
