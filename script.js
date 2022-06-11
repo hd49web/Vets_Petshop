@@ -52,7 +52,7 @@ setTimeout(function(){
 setTimeout(function(){
     if(andando <="correndo.gif"){
     andando.src= 'gif/late.gif';
-    andando.style.width='150px';
+    andando.style.width='130px';
     deolho.src ='imagens/logo2.jpg';
     deolho.style.width='195px';
     }
